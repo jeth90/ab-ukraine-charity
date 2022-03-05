@@ -1,0 +1,20 @@
+GET http://localhost:3000/models/event
+
+###
+GET http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "accountid": "0x1b04023a95188F60B58CDDe9B26C9e10DB0DCb70"
+}
+
+POST  http://localhost:3000/api/event
+Content-Type: application/json
+
+{
+    "title": "test",
+    "description": "sample"
+}
+
+###
+GET  http://localhost:8001/api/metaverses

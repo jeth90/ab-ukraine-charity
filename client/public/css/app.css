@@ -1,0 +1,239 @@
+.header__btns {
+    display: flex!important;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__btns #connectbtn {
+    display: flex!important;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gaming__sidebar {
+    height: calc(100vh - 90px)!important;
+    margin-top: 90px!important;
+}
+
+.gaming__sidebar .avatars a {
+    position: relative;
+    width: 46px;
+    height: 46px!important;
+    border: none;
+}
+
+.hero__5 {
+    overflow: visible!important;
+    position: relative;
+    width: 100%;
+    margin-top: 110px;
+}
+
+.hero_marketplace {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top: 90px;
+}
+
+.hero__profile {
+    position: relative;
+    width: 100%;
+    margin-top: 90px;
+}
+
+.card__item .product__img {
+    position: relative!important;
+    display: inline-block;
+    width: 60px!important;
+    height: 60px!important;
+}
+
+.card__item .eth__img {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+}
+
+.section__games .card__games a {
+    position: relative!important;
+    max-width: 180px!important;
+}
+
+.section__games .card__games span {
+    max-width: 180px!important;
+    margin: 0 auto!important;
+}
+
+.color_white {
+    color: #fff!important;
+}
+
+#profile-container div {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+}
+
+.box {
+    margin-top: 20px;
+}
+
+.dropdown-menu.show {
+    position: absolute; transform: translate3d(0px, 34px, 0px); top: 0px; left: 0px; will-change: transform;
+}
+
+
+.card__item .card_head .img {
+    width: 100%;
+    height: 100%;
+    position: relative!important;
+}
+
+.card_footer .creators .avatars a {
+    position: relative!important;
+    width: 2rem;
+    height: 2rem;
+}
+
+.hero__profile .cover {
+    position: relative!important;
+    overflow: hidden;
+}
+
+.infos .avatar_wrap div {
+    position: absolute!important;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+    padding: 0!important;      
+}
+
+.infos .avatar_wrap span {
+    position: relative!important;
+    left: 0!important;
+    top: 0!important;
+    width: 7rem!important;
+    height: 7rem!important;    
+    padding: 0!important;
+    margin: 0!important;
+    background: #fff!important;
+    border-radius: 50%!important;
+}
+.infos .avatar_wrap img
+ {   
+    border-radius: 50% !important;
+    width: 100%!important;
+    height: 100%!important;
+    border: solid 5px #ffffff!important;
+} 
+
+.hero__profile .avatar_wrap .avatar {
+    padding: 0!important;
+    border: 0!important;    
+}
+
+.header__avatar .avatar {
+    position: relative!important;
+}
+
+.header__avatar .avatar img {
+    border-radius: 50%;
+}
+
+.header__avatar .coin {
+    position: relative!important;
+    width: 36px!important;
+    height: 36px!important;   
+}
+
+.box.in__upload{
+    border: none!important;
+}
+.main__con {
+    position: relative!important;
+}
+.main__img__con {
+    width: 100%;
+    min-height: 100px;
+    position: relative!important;
+    
+}
+.main__img__con img {
+    border-radius: 20px;
+    z-index: 1040!important;
+}
+.action__con {
+    z-index: 1050!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.action__con a {
+    padding: 15px;
+    color: #cacaca!important;
+    display: none;
+    border-radius: 50%;
+    height: 50px; 
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.action__con a:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.main__con:hover a {
+    display: inline-block;
+}
+
+.card_head video {
+    width: 100%;
+}
+
+.attachments .card__item {
+    max-width: 100%!important;
+    padding: 0;
+    height: 250px;
+}
+
+.attachments .card__item a {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding: 15px;
+    color: #cacaca!important;
+    display: none;
+    border-radius: 50%;
+    height: 50px; 
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.attachments .card__item:hover a{
+    display: block;
+}
+
+.attachments .card__item a:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+model-viewer{
+    height:100%;
+    width:100%;
+}
