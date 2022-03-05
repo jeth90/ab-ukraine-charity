@@ -1,44 +1,37 @@
-import React, {useContext} from 'react'
-import Link from 'next/link'
-
+import React from 'react'
 import { EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, FreeMode } from "swiper";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import { useAppContext } from '../../context/ContextProvider';
-
+import { Pagination, Navigation } from "swiper";
+import Image from 'next/image'
 
 const SliderHero = () => {
-    const {connectWallet, currentAccount} = useAppContext();
-
   return (
-    <Swiper   
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        freeMode={true}
-        loop={true}
-        loopFillGroupWithBlank={true}
-        pagination={true}
-        navigation={true}
-        modules={[Pagination, EffectCoverflow, Navigation, FreeMode]}
-        className="swiper"
-    >
-    <SwiperSlide>
-        <div className="hero__left slide_1">
-            <div className="hero__wrap space-y-20 text-center">
+      <div className="carousel-slider">
+          <Swiper   
+            effect={'coverflow'}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={'auto'}
+            coverflowEffect={{
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+                scale: 0.8
+            }}
+            loop={true}
+            autoplay= {{
+                delay: 500,
+            }}
+            pagination={true}
+            navigation={true}
+            modules={[Pagination, EffectCoverflow, Navigation]}
+            className="swiper">
+        <SwiperSlide>
+        <div className="carousel-slider-animate-opacity">
+            <Image src={"/img/bg/home5/in_hero5.png"} layout='fill' objectFit='cover'/>
+            <div className="slide-content">
                 <h2 className="hero__title">
                     Trade NFT and Virtual
                     In-game Items
@@ -47,65 +40,141 @@ const SliderHero = () => {
                     top six NFT platforms on
                     eips.ethereum.org, the DMarket
                     marketplace enables millions of gamers
-                    and Esports fans</p>
-                 <div>
-                    {!currentAccount && (
-                        <button type='button' className="btn btn-grad w-50" 
-                            style={{margin: 'auto'}} 
-                            onClick={connectWallet}>Connect Wallet</button>
-                    )}
-                    {currentAccount && (
-                        <button type='button' className="btn btn-grad w-50" 
-                            style={{margin: 'auto'}} 
-                            >SELECT</button>
-                    )}
-                    
-                </div>
+                    and Esports fans</p>                
             </div>
         </div>
     </SwiperSlide>
     <SwiperSlide>
-        <div className="hero__left slide_2">
-            <div className="hero__wrap space-y-20 text-center">
+        <div className="carousel-slider-animate-opacity">
+            <Image src={"/img/bg/home5/in_hero5_1.png"} layout='fill' objectFit='cover'/>
+            <div className="slide-content">
                 <h2 className="hero__title">
-                    Discover digital art and collect NFTs
+                    Trade NFT and Virtual
+                    In-game Items
                 </h2>
-                <p className="hero__text txt">raroin is a shared
-                    liquidity NFT market smart contract
-                    which is used by multiple websites to
-                    provide the users the best possible
-                    experience.</p>
-                <div>
-                    <Link href="#">
-                        <a className="btn btn-grad w-50" style={{margin: 'auto'}} >SELECT</a>
-                    </Link>
-                </div>
+                <p className="hero__text txt">Raroin among the
+                    top six NFT platforms on
+                    eips.ethereum.org, the DMarket
+                    marketplace enables millions of gamers
+                    and Esports fans</p>                
             </div>
         </div>
     </SwiperSlide>
     <SwiperSlide>
-        <div className="hero__left slide_3">
-            <div className="hero__wrap space-y-20 text-center">
+        <div className="carousel-slider-animate-opacity">
+            <Image src={"/img/bg/home5/in_hero5_2.png"} layout='fill' objectFit='cover'/>
+            <div className="slide-content">
                 <h2 className="hero__title">
-                    Pull market data from our digital asset
-                    API
+                    Trade NFT and Virtual
+                    In-game Items
                 </h2>
-                <p className="hero__text txt"> raroin is a
-                    shared
-                    liquidity NFT market smart contract
-                    which is used by multiple websites to
-                    provide the users the best possible
-                    experience</p>
-                <div>
-                    <Link href="#">
-                        <a className="btn btn-grad w-50" style={{margin: 'auto'}}>SELECT</a>
-                    </Link>
-                </div>
+                <p className="hero__text txt">Raroin among the
+                    top six NFT platforms on
+                    eips.ethereum.org, the DMarket
+                    marketplace enables millions of gamers
+                    and Esports fans</p>                
             </div>
         </div>
     </SwiperSlide>
-
+    <SwiperSlide>
+        <div className="carousel-slider-animate-opacity">
+            <Image src={"/img/bg/home5/in_hero5.png"} layout='fill' objectFit='cover'/>
+            <div className="slide-content">
+                <h2 className="hero__title">
+                    Trade NFT and Virtual
+                    In-game Items
+                </h2>
+                <p className="hero__text txt">Raroin among the
+                    top six NFT platforms on
+                    eips.ethereum.org, the DMarket
+                    marketplace enables millions of gamers
+                    and Esports fans</p>                
+            </div>
+        </div>
+    </SwiperSlide>
+    <SwiperSlide>
+        <div className="carousel-slider-animate-opacity">
+            <Image src={"/img/bg/home5/in_hero5_1.png"} layout='fill' objectFit='cover'/>
+            <div className="slide-content">
+                <h2 className="hero__title">
+                    Trade NFT and Virtual
+                    In-game Items
+                </h2>
+                <p className="hero__text txt">Raroin among the
+                    top six NFT platforms on
+                    eips.ethereum.org, the DMarket
+                    marketplace enables millions of gamers
+                    and Esports fans</p>                
+            </div>
+        </div>
+    </SwiperSlide>
+    <SwiperSlide>
+        <div className="carousel-slider-animate-opacity">
+            <Image src={"/img/bg/home5/in_hero5_2.png"} layout='fill' objectFit='cover'/>
+            <div className="slide-content">
+                <h2 className="hero__title">
+                    Trade NFT and Virtual
+                    In-game Items
+                </h2>
+                <p className="hero__text txt">Raroin among the
+                    top six NFT platforms on
+                    eips.ethereum.org, the DMarket
+                    marketplace enables millions of gamers
+                    and Esports fans</p>                
+            </div>
+        </div>
+    </SwiperSlide>
+    <SwiperSlide>
+        <div className="carousel-slider-animate-opacity">
+            <Image src={"/img/bg/home5/in_hero5.png"} layout='fill' objectFit='cover'/>
+            <div className="slide-content">
+                <h2 className="hero__title">
+                    Trade NFT and Virtual
+                    In-game Items
+                </h2>
+                <p className="hero__text txt">Raroin among the
+                    top six NFT platforms on
+                    eips.ethereum.org, the DMarket
+                    marketplace enables millions of gamers
+                    and Esports fans</p>                
+            </div>
+        </div>
+    </SwiperSlide>
+    <SwiperSlide>
+        <div className="carousel-slider-animate-opacity">
+            <Image src={"/img/bg/home5/in_hero5_1.png"} layout='fill' objectFit='cover'/>
+            <div className="slide-content">
+                <h2 className="hero__title">
+                    Trade NFT and Virtual
+                    In-game Items
+                </h2>
+                <p className="hero__text txt">Raroin among the
+                    top six NFT platforms on
+                    eips.ethereum.org, the DMarket
+                    marketplace enables millions of gamers
+                    and Esports fans</p>                
+            </div>
+        </div>
+    </SwiperSlide>
+    <SwiperSlide>
+        <div className="carousel-slider-animate-opacity">
+            <Image src={"/img/bg/home5/in_hero5_2.png"} layout='fill' objectFit='cover'/>
+            <div className="slide-content">
+                <h2 className="hero__title">
+                    Trade NFT and Virtual
+                    In-game Items
+                </h2>
+                <p className="hero__text txt">Raroin among the
+                    top six NFT platforms on
+                    eips.ethereum.org, the DMarket
+                    marketplace enables millions of gamers
+                    and Esports fans</p>                
+            </div>
+        </div>
+    </SwiperSlide>
     </Swiper>
+    </div>
+    
   )
 }
 
