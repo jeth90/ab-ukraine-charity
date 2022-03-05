@@ -72,8 +72,10 @@ export const AppProvider = ({ children }) => {
     const sendDonation = async () => {
         try {
             if(!ethereum) return alert('Please install metamask');
-            //get data from the form
-            
+            if(!currentAccount) {
+                connectWallet()
+            }
+                       
             const {addressTo, amount} = formData;
             const donationContract = getEthereumContract();
             const parsedAmount = ethers.utils.parseEther(amount)
