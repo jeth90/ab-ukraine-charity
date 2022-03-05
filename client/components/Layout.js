@@ -1,9 +1,7 @@
 
 import Meta from './templates/Meta'
-import Header from './templates/Header'
 import HeaderMobile from './templates/HeaderMobile'
 import Footer from './templates/Footer'
-import Sidebar from './templates/Sidebar'
 
 import { useRouter } from 'next/router'
 

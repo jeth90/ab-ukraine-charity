@@ -63,9 +63,9 @@ export default function Home() {
                         </div>
                     </div>
                     <h4 className='mt-50 text-center'>Select Charity (or we select one charity)</h4> 
-
-                    <div className='row mt-50 gx-5'>
-                        <form method='post' onSubmit={handleSubmit}>
+                    <form method='post' onSubmit={handleSubmit}>
+                        <div className='row mt-50 gx-5'>
+                        
                             <div className='col-lg-4'>
                                 <div className="form-group space-y-10 mb-0">
                                     <div className="space-y-10">
@@ -105,8 +105,8 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                     <div className='row mt-50'>
                         <div className='col-lg-8' style={{margin: 'auto'}}>
                             <div className="hr" style={{border: 'solid 2px '}}></div>
